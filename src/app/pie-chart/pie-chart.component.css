@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.legend {
+  display: flex;
+  height: 100%;
+  margin-left: 32px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}
+
+.label > span {
+  height: 6px;
+  width: 16px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.circle {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.left {
+  left: -50%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.inner-left {
+  transform-origin: center right;
+  height: 100%;
+  width: 100%;
+}
+
+.right {
+  left: 50%;
+  transform-origin: center left;
+}

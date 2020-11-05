@@ -1,0 +1,30 @@
+<div class="container">
+  <div
+    class="circle"
+    [style.height]="height + 'px'"
+    [style.width]="width + 'px'"
+    [style.background-color]="colorOne"
+  >
+    <div class="square left">
+      <div
+        class="inner-left"
+        [style.transform]="'rotate(' + leftRotation + 'deg)'"
+        [style.background-color]="colorTwo"
+      ></div>
+    </div>
+    <div
+      class="square right"
+      [style.opacity]="percentage >= 50 ? 0 : 1"
+      [style.transform]="'rotate(' + rightRotation + 'deg)'"
+      [style.background-color]="colorTwo"
+    ></div>
+  </div>
+  <div class="legend">
+    <div class="label">
+      <span [style.background-color]="colorOne"></span>{{ labelOne }}
+    </div>
+    <div class="label">
+      <span [style.background-color]="colorTwo"></span>{{ labelTwo }}
+    </div>
+  </div>
+</div>
